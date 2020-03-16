@@ -1,0 +1,9 @@
+# General
+*~
+*.log
+
+# IDE
+.vscode
+
+# Mine
+vault

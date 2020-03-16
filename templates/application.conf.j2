@@ -1,0 +1,21 @@
+mopidy {
+  base-url = "{{ rfid_jukebox_mopidy_base_url }}"
+}
+
+spi {
+  controller = {{ rfid_jukebox_spi_controller }}
+  chip-select = {{ rfid_jukebox_spi_chip_select }}
+  reset-gpio = {{ rfid_jukebox_spi_reset_gpio }}
+}
+
+albums {
+{% for key in rfid_jukebox_albums %}
+  "{{ key }}": "{{ rfid_jukebox_albums[key] }}",
+{% endfor %}
+}
+
+commands {
+{% for key in rfid_jukebox_commands %}
+  "{{ key }}": "{{ rfid_jukebox_commands[key] }}",
+{% endfor %}
+}

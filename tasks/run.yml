@@ -1,0 +1,11 @@
+---
+- name: "Ensure RFID Jukebox starts at boot"
+  become: true
+  service:
+    name: rfid-jukebox
+    enabled: yes
+- name: "Ensure RFID Jukebox is running"
+  become: true
+  service:
+    name: rfid-jukebox
+    state: started

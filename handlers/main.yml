@@ -1,0 +1,9 @@
+---
+# handlers file for rfid-jukebox
+
+- name: "Restart RFID Jukebox"
+  listen: "restart rfid-jukebox"
+  become: true
+  service:
+    name: rfid-jukebox
+    state: restarted

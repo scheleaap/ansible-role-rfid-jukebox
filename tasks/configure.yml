@@ -1,0 +1,11 @@
+---
+- name: "Configure RFID Jukebox"
+  become: true
+  template:
+    src: templates/application.conf.j2
+    dest: /etc/rfid-jukebox.conf
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+    - restart rfid-jukebox

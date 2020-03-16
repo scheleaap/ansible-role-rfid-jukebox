@@ -1,0 +1,6 @@
+---
+
+- name: "Ensure RFID Jukebox is installed"
+  become: true
+  apt:
+    deb: "https://github.com/scheleaap/rfid-jukebox/releases/download/v{{ rfid_jukebox_version }}/rfid-jukebox_{{ rfid_jukebox_version }}_all.deb"
