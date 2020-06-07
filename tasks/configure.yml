@@ -9,3 +9,11 @@
     mode: 0644
   notify:
     - restart rfid-jukebox
+- name: "Allow RFID Jukebox to sudo shutdown without a password"
+  become: true
+  copy:
+    src: sudoers
+    dest: /etc/sudoers.d/rfid-jukebox
+    owner: root
+    group: root
+    mode: 0440
