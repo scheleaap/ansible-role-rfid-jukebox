@@ -1,0 +1,1 @@
+rfid-jukebox ALL = NOPASSWD: /sbin/shutdown
