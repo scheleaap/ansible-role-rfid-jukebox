@@ -19,3 +19,9 @@ commands {
   "{{ key }}": "{{ rfid_jukebox_commands[key] }}",
 {% endfor %}
 }
+
+hooks {
+{% for key in rfid_jukebox_hooks %}
+  {{ key }}: "{{ rfid_jukebox_hooks[key] }}",
+{% endfor %}
+}

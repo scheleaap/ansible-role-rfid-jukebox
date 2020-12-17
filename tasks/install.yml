@@ -1,5 +1,4 @@
 ---
-
 - name: "Ensure RFID Jukebox is installed"
   become: true
   apt:
