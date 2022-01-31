@@ -2,6 +2,10 @@ mopidy {
   base-url = "{{ rfid_jukebox_mopidy_base_url }}"
 }
 
+reader = "{{ rfid_jukebox_reader }}"
+
+read-interval = "{{ rfid_jukebox_read_interval_ms }} ms"
+
 spi {
   controller = {{ rfid_jukebox_spi_controller }}
   chip-select = {{ rfid_jukebox_spi_chip_select }}

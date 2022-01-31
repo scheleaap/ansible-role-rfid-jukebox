@@ -3,6 +3,8 @@
 
 rfid_jukebox_version: "1.0.0"
 rfid_jukebox_mopidy_base_url: "http://localhost:6680/mopidy/rpc"
+rfid_jukebox_reader: "default"
+rfid_jukebox_read_interval_ms: 250
 rfid_jukebox_spi_controller: 0
 rfid_jukebox_spi_chip_select: 0
 rfid_jukebox_spi_reset_gpio: 25
