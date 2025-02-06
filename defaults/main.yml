@@ -1,10 +1,12 @@
 ---
 # defaults file for rfid-jukebox
 
-rfid_jukebox_version: "1.0.0"
+rfid_jukebox_version: "1.4.0"
 rfid_jukebox_mopidy_base_url: "http://localhost:6680/mopidy/rpc"
-rfid_jukebox_reader: "default"
-rfid_jukebox_read_interval_ms: 250
+rfid_jukebox_reader: "modified"
+rfid_jukebox_min_read_interval: "1 s"
+rfid_jukebox_max_read_interval_active_periods: "30 s"
+rfid_jukebox_max_read_interval_quiet_periods: "1 m"
 rfid_jukebox_spi_controller: 0
 rfid_jukebox_spi_chip_select: 0
 rfid_jukebox_spi_reset_gpio: 25

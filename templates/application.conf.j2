@@ -4,7 +4,9 @@ mopidy {
 
 reader = "{{ rfid_jukebox_reader }}"
 
-read-interval = "{{ rfid_jukebox_read_interval_ms }} ms"
+min-read-interval = "{{ rfid_jukebox_min_read_interval }}"
+max-read-interval-active-periods = "{{ rfid_jukebox_max_read_interval_active_periods }}"
+max-read-interval-quiet-periods = "{{ rfid_jukebox_max_read_interval_quiet_periods }}"
 
 spi {
   controller = {{ rfid_jukebox_spi_controller }}
